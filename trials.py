@@ -71,7 +71,13 @@ def snake_to_camel(string):
 
 def longest_word_length(words):
 
+    longest = len(words[0])
 
+    for word in words:
+        if longest < len(word):
+            longest = len(word)
+
+    return longest
     
 #     function longestWordLength(words) {
 #   let longest = words[0].length;
