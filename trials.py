@@ -2,7 +2,7 @@
 
 
 def output_all_items(items):
-    
+
     for item in items:
         print(item)
 
@@ -18,11 +18,23 @@ def get_all_evens(nums):
 
 
 def get_odd_indices(items):
-    pass  # TODO: replace this line with your code
+    
+    odd_indices = []
+
+    for idx, item in enumerate(items):
+        if idx % 2 != 0:
+            odd_indices.append(item)
+
+    return odd_indices
 
 
 def print_as_numbered_list(items):
-    pass  # TODO: replace this line with your code
+    
+    i = 1
+
+    for item in items:
+        print(f'{i}. {item}')
+        i += 1
 
 
 def get_range(start, stop):
