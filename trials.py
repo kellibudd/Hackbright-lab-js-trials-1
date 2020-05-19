@@ -80,7 +80,14 @@ def longest_word_length(words):
     return longest
 
 def truncate(string):
-    pass  # TODO: replace this line with your code
+
+    result = []
+
+    for letter in string:
+        if len(result) == 0 or letter != result[-1]:
+            result.append(letter)
+
+    return ''.join(result)
 
 
 def has_balanced_parens(string):
