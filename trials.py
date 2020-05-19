@@ -48,11 +48,40 @@ def get_range(start, stop):
     return range_of_nums
 
 def censor_vowels(word):
-    pass  # TODO: replace this line with your code
 
+    censored_word = []
+    
+    for letter in word:
+        if letter in 'aeiou':
+            censored_word.append('*')
+        else:
+            censored_word.append(letter)
+
+    return ''.join(censored_word)
 
 def snake_to_camel(string):
-    pass  # TODO: replace this line with your code
+    
+    camel_case = []
+
+    for word in string.split('_'):
+        camel_case.append(f'{word[0].upper()}{word[1:].lower()}')
+
+    return ''.join(camel_case)
+
+#     // Given a string in snake case, return a string in upper camel case.
+# //
+# // Ex.:
+# //   > snakeToCamel('hello_world');
+# //   'HelloWorld'
+# function snakeToCamel(string) {
+#   const camelCase = [];
+
+#   for (const word of string.split('_')) {
+#     camelCase.push(`${word[0].toUpperCase()}${word.slice(1)}`);
+#   }
+
+#   return camelCase.join('');
+# }
 
 
 def longest_word_length(words):
