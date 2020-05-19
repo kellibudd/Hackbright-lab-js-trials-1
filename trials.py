@@ -78,19 +78,6 @@ def longest_word_length(words):
             longest = len(word)
 
     return longest
-    
-#     function longestWordLength(words) {
-#   let longest = words[0].length;
-
-#   for (const word of words) {
-#     if (longest < word.length) {
-#       longest = word.length;
-#     }
-#   }
-
-#   return longest;
-# }
-
 
 def truncate(string):
     pass  # TODO: replace this line with your code
