@@ -38,8 +38,14 @@ def print_as_numbered_list(items):
 
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
 
+    range_of_nums = []
+
+    for num in range(start,stop):
+        if num < stop:
+            range_of_nums.append(num)
+
+    return range_of_nums
 
 def censor_vowels(word):
     pass  # TODO: replace this line with your code
