@@ -61,31 +61,29 @@ def censor_vowels(word):
 
 def snake_to_camel(string):
     
-    camel_case = []
+    upper_camel_case = []
 
     for word in string.split('_'):
-        camel_case.append(f'{word[0].upper()}{word[1:].lower()}')
+        upper_camel_case.append(f'{word[0].upper()}{word[1:].lower()}')
 
-    return ''.join(camel_case)
-
-#     // Given a string in snake case, return a string in upper camel case.
-# //
-# // Ex.:
-# //   > snakeToCamel('hello_world');
-# //   'HelloWorld'
-# function snakeToCamel(string) {
-#   const camelCase = [];
-
-#   for (const word of string.split('_')) {
-#     camelCase.push(`${word[0].toUpperCase()}${word.slice(1)}`);
-#   }
-
-#   return camelCase.join('');
-# }
+    return ''.join(upper_camel_case)
 
 
 def longest_word_length(words):
-    pass  # TODO: replace this line with your code
+
+
+    
+#     function longestWordLength(words) {
+#   let longest = words[0].length;
+
+#   for (const word of words) {
+#     if (longest < word.length) {
+#       longest = word.length;
+#     }
+#   }
+
+#   return longest;
+# }
 
 
 def truncate(string):
