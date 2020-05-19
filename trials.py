@@ -2,8 +2,8 @@
 
 
 def output_all_items(items):
-    pass  # TODO: replace this line with your code
-
+    for item in items:
+        print(item)
 
 def get_all_evens(nums):
     pass  # TODO: replace this line with your code
